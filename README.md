@@ -6,12 +6,12 @@
 
 ## Specifications ##
 
-* The Program accepts numerical values only. Other values will be ignored.
-  * Example Input: "!"
-  * Example Output: ""
+* This program produces a range (starting at 1) of numbers up to the user input number.
+  * Example Input: "2"
+  * Example Output: "1,2"
 
 * Numbers divisible by 3 are replaced with "ping".
-  * Example Input: "9"
+  * Example Input: "3"
   * Example Output: "ping"
 
 * Numbers divisible by 5 are replaced with "pong".
@@ -26,6 +26,10 @@
 
 * Clone the repository from GitHub (https://github.com/afastbaker/pingpong)
 * Open the index.html file in your browser of choice
+* Program will then function in the web browser
+* Input a number
+* Click submit button
+* A number range will be generated
 
 ## Known Bugs
 
