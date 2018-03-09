@@ -11,3 +11,20 @@ $(document).ready(function() {
 });
 
 //biz logic
+var pingpong = function(input) {
+
+  var output = "";
+  for (var i = 1; i <= input; i++) {
+
+    if (i % 15 === 0) {
+      output += "ping-pong" + " ";
+    } else if (i % 5 === 0) {
+      output += "pong" + " ";
+    } else if (i % 3 === 0) {
+      output += "ping" + " ";
+    } else {
+      output += i + " ";
+    }
+  }
+
+return output;
