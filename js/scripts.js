@@ -16,19 +16,23 @@ var pingpong = function(userInput) {
         }
       });
   }
-  return output;
-
-};
+  return arrayNumbers;
 }
 
 // UI logic
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
     event.preventDefault();
-    var inputNumber = parseInt($("input#number").val());
-    var result = createArray(inputNumber);
+    var userInput = $("input#userInput").val();
+    var showResults = function(arrayOutput) {
+        $("ul#result").empty();
+      arrayOutput.forEach(function(item) {
+        $("ul#result").append('<li class="list-group-item">' + item +'</li>')
+      });
+      return;
+    }
 
-    $("#result p").text(result);
-    $("#result").show();
+    showResults(pingpong(userInput))
+
   });
 });
