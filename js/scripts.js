@@ -1,22 +1,25 @@
 
 //biz logic
-var pingpong = function(input) {
-
-  var output = "";
-  for (var i = 1; i <= input; i++) {
-
-    if (i % 15 === 0) {
-      output += "ping-pong" + " ";
-    } else if (i % 5 === 0) {
-      output += "pong" + " ";
-    } else if (i % 3 === 0) {
-      output += "ping" + " ";
-    } else {
-      output += i + " ";
-    }
+var pingpong = function(userInput) {
+  var arrayNumbers = [];
+  if (userInput > 0) {
+      for (var i = 1; i <= userInput; i++) {
+      arrayNumbers.push(i);
+      }
+      arrayNumbers. forEach(function(number) {
+        if (number % 15 === 0) {
+          arrayNumbers [number-1] = "ping-pong";
+        } else if (i % 5 === 0) {
+          arrayNumbers [number-1] = "pong";
+        } else if (i % 3 === 0) {
+          arrayNumbers [number-1] = "ping";
+        }
+      });
   }
+  return output;
 
-return output;
+};
+}
 
 // UI logic
 $(document).ready(function() {
